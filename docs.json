@@ -38,10 +38,10 @@
 
     ]
   },
-  //"logo": {
-  //  "light": "/images/oceanpulse-logo.png",
-  //  "dark": "/images/oceanpulse-logo.png"
-  //},
+  "logo": {
+    "light": "/images/oceanpulse-logo.png",
+    "dark": "/images/oceanpulse-logo.png"
+  },
   "navbar": {
     "links": [
       {
