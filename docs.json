@@ -39,8 +39,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/oceanpulse-logo.png",
+    "dark": "/images/oceanpulse-logo.png"
   },
   "navbar": {
     "links": [
