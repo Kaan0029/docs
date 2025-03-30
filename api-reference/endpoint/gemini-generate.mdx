@@ -1,0 +1,35 @@
+---
+title: Gemini Generate
+description: Generate content using Gemini API with a user-defined prompt
+---
+
+# 🔮 Gemini Generate Endpoint
+
+Generate rich text content using Google’s Gemini API by sending a custom prompt.
+
+---
+
+## 📮 POST `/generate`
+
+### 📬 Description
+Send a prompt to the Gemini API and receive a generated text response.
+
+### 🧾 Headers
+
+- `Content-Type`: `application/json`
+
+### 📤 Request Body
+
+```json
+{
+  "prompt": "How can we prevent overfishing?"
+}
+{
+  "status": "1",
+  "content": "To mitigate overfishing, we can implement stricter catch limits, expand marine protected areas..."
+}
+{
+  "status": "-1",
+  "message": "Prompt is required"
+}
+```

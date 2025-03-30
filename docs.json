@@ -42,7 +42,8 @@
             "pages": [
               "api-reference/endpoint/species-get",
               "api-reference/endpoint/species-year",
-              "api-reference/endpoint/species-month-year"
+              "api-reference/endpoint/species-month-year",
+              "api-reference/endpoint/gemini-generate"
             ]
           }
         ]
