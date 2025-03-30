@@ -1,0 +1,14 @@
+{
+    "$schema": "https://modelcontext.org/schema/v1.json",
+    "name": "OceanPulse API",
+    "version": "1.0.0",
+    "description": "API docs for the OceanPulse project, which detects illegal fishing and marine biodiversity impacts.",
+    "entrypoints": [
+      {
+        "name": "Species Endpoints",
+        "description": "Endpoints for retrieving species occurrence data via OBIS.",
+        "url": "/api-reference/species-endpoints"
+      }
+    ]
+  }
+  

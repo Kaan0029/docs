@@ -1,71 +1,59 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: OceanPulse
+description: "Connecting Illegal Fishing Detection with Marine Ecosystem Impact"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+# OceanPulse: Connecting Illegal Fishing Detection with Marine Ecosystem Impact
 
-## Setting up
+## 🌊 Hackathon Overview (36-Hour Implementation)
 
-The first step to world-class documentation is setting up your editing environments.
+OceanPulse is a sustainable technology solution that detects illegal fishing activities and correlates them with fish migration patterns to provide a comprehensive understanding of marine ecosystem impacts. This project builds upon concepts like ShipSense but adds a critical ecological dimension.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+---
 
-## Make it yours
+## ❗ The Problem
 
-Update your docs to your brand and add valuable content for the best user conversion.
+Illegal fishing threatens global marine ecosystems, with approximately 20% of all fish caught illegally. Traditional monitoring fails to connect vessel detection with ecological impact, creating an incomplete picture for conservation efforts.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+---
+
+## 💡 Core Solution (36-Hour Implementation)
+
+We will develop:
+
+1. **Ship Detection Module**  
+   A neural network that identifies fishing vessels in satellite imagery and analyzes suspicious "dark vessel" behavior
+
+2. **Fish Migration Correlation**  
+   An analysis engine that connects detected fishing activities to known fish migration routes and population data
+
+3. **Interactive Dashboard**  
+   A visualization platform that displays both vessel activities and ecological impacts in an integrated map interface
+
+---
+
+## 🧭 Key Datasets
+
+- [MarineCadastre Vessel Traffic](http://hub.marinecadastre.gov/pages/vesseltraffic)
+- [OBIS Marine Species Access](https://obis.org/data/access/)
+
+### 🛰️ Ship Detection Datasets
+
+- **Global Fishing Watch**: AIS tracking for 60,000+ fishing vessels  
+- **Dark Vessel Dataset**: 55,000+ AIS gap records from ShipSense
+
+### 🐟 Fish Migration Datasets
+
+- **GBIF Marine Data**: Species occurrence data  
+- **NOAA Fisheries**: Commercial fish stock + migration data  
+- **OBIS Biodiversity**: Ocean species distribution
+
+---
+
+## 🧪 Synthetic Data Applications
+
+1. **Ship Imagery**  
+   Fine-tuned Stable Diffusion (like ShipSense) to generate synthetic satellite images of fishing vessels
+
+2. **Predictive Migration Modeling**  
+   Modeling how fish populations respond to fishing pressure in poorly monitored regions
