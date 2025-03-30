@@ -1,0 +1,38 @@
+---
+title: Species Endpoint – Year
+description: Get all occurrence data for a species within a given year.
+---
+
+# 📅 Get Species Data by Year
+
+Query marine species data within a full calendar year.
+
+---
+
+## 🔗 Endpoint
+
+`GET /data/<species>/<yr>`
+
+- `<species>` = scientific name  
+- `<yr>` = 4-digit year (e.g. `2022`)
+
+---
+
+## 💼 Usage
+
+```bash
+# Success response
+curl http://localhost:5000/data/Thunnus%20albacares/2022
+
+{
+  "status": 200,
+  "results": [
+    {
+      "scientificName": "Thunnus albacares",
+      "decimalLatitude": 34.567,
+      "decimalLongitude": -120.456,
+      "eventDate": "2022-05-09"
+    }
+  ]
+}
+```

@@ -1,0 +1,42 @@
+---
+title: Species Endpoint – Basic
+description: Fetch occurrence data for a marine species using the OBIS API.
+---
+
+# 🧬 Get Species Data
+
+Query occurrence records for a marine species by name.
+
+---
+
+## 🔗 Endpoint
+
+`GET /data/<species>`
+
+- `<species>` = scientific name  
+- Example: `Thunnus albacares`
+
+---
+
+## 💼 Usage
+
+```bash
+curl http://localhost:5000/data/Thunnus%20albacares
+
+{
+  "status": 200,
+  "results": [
+    {
+      "scientificName": "Thunnus albacares",
+      "decimalLatitude": -10.123,
+      "decimalLongitude": 155.456,
+      "eventDate": "2022-08-13"
+    }
+  ]
+}
+
+{
+  "status": 404,
+  "message": "Species not found"
+}
+```

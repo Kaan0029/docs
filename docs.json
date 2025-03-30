@@ -38,14 +38,16 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "Species Endpoints",
+            "group": "OceanPulse Endpoints",
             "pages": [
-              "api-reference/species-endpoints"
+              "api-reference/endpoint/species-get",
+              "api-reference/endpoint/species-year",
+              "api-reference/endpoint/species-month-year"
             ]
           }
         ]
       }
-            
+
     ],
     "global": {
       "anchors": [

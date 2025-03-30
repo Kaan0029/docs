@@ -1,0 +1,44 @@
+---
+title: Species Endpoint – Month + Year
+description: Get occurrence data for a species during a specific month of a year.
+---
+
+# 📅 Get Species Data by Month and Year
+
+Query for species occurrences during a specific month and year.
+
+---
+
+## 🔗 Endpoint
+
+`GET /data/<species>/<month>/<yr>`
+
+- `<species>` = scientific name  
+- `<month>` = numeric month (01–12)  
+- `<yr>` = 4-digit year (e.g. `2022`)
+
+---
+
+## 💼 Usage
+
+```bash
+curl http://localhost:5000/data/Thunnus%20albacares/8/2022
+
+{
+  "status": 200,
+  "results": [
+    {
+      "scientificName": "Thunnus albacares",
+      "decimalLatitude": -20.456,
+      "decimalLongitude": 140.123,
+      "eventDate": "2022-08-12"
+    }
+  ]
+}
+
+{
+  "status": 404,
+  "message": "Species not found"
+}
+```
+
